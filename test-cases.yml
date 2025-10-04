@@ -26,7 +26,6 @@ Positive Testing
   expected-result: |
     Отображается список товаров выбранной категории
 
-
 - summary: |
     Проверка фильтрации товаров по цене
   requirement: |

@@ -1,6 +1,6 @@
  ---
-Positive Testing
-- summary: |
+#Positive Testing
+ - summary: |
     Проверка поиска товара по ключевому слову
   requirement: |
     Пользователь должен иметь возможность искать товары по ключевому слову
@@ -14,7 +14,7 @@ Positive Testing
   expected-result: |
     Отображаются товары, соответствующие ключевому слову
     
-- summary: |
+ - summary: |
     Проверка поиска товара по категории
   requirement: |
     Пользователь должен иметь возможность искать товары по категории
@@ -27,7 +27,7 @@ Positive Testing
   expected-result: |
     Отображается список товаров выбранной категории
 
-- summary: |
+ - summary: |
     Проверка фильтрации товаров по цене
   requirement: |
     Пользователь должен иметь возможность фильтровать товары по цене
@@ -41,203 +41,203 @@ Positive Testing
   expected-result: |
     Отображаются товары, цена которых находится в заданных пределах
 
-- summary: |
+  - summary: |
     Проверка просмотра товара и его подробной информации
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность просматривать товары и подробную информацию о товаре
-  prerequisites: |
+   prerequisites: |
     Открыта страница списка товаров
-  test-data: |
+   test-data: |
     Товар = "Асус"
-  steps:
+   steps:
     - Кликнуть по названию выбранного товара
-  expected-result: |
+   expected-result: |
     Открывается страница товара с подробной информацией
 
-- summary: |
+  - summary: |
     Проверка добавления товара в корзину
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность добавлять товары в корзину
-  prerequisites: |
+   prerequisites: |
     Открыта страница товара
-  test-data: |
+   test-data: |
     Товар = "Gucci"
-  steps:
+   steps:
     - Нажать кнопку "Добавить в корзину"
-  expected-result: |
+   expected-result: |
     Товар появляется в корзине
 
-- summary: |
+  - summary: |
     Проверка просмотра содержимого корзины
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность просматривать содержимое корзины
-  prerequisites: |
+   prerequisites: |
     В корзину добавлен хотя бы один товар
-  test-data: |
+   test-data: |
     Товар = "Gucci"
-  steps:
+   steps:
     - Перейти в корзину
-  expected-result: |
+   expected-result: |
     Отображается список добавленных товаров
    
-- summary: |
+  - summary: |
     Проверка удаления товара из корзины
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность удалить товар из корзины
-  prerequisites: |
+   prerequisites: |
     В корзину добавлен хотя бы один товар
-  test-data: |
+   test-data: |
     Товар = "Gucci"
-  steps:
+   steps:
     - Перейти в корзину
     - Нажать кнопку "Удалить" рядом с товаром
-  expected-result: |
+   expected-result: |
     Товар удаляется из корзины
 
-- summary: |
+  - summary: |
     Проверка переключения языка интерфейса на английский язык
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность переключить на английский язык
-  prerequisites: |
+   prerequisites: |
     Открыта главная страница сайта
-  test-data: |
+   test-data: |
     Язык = Русский
-  steps:
+   steps:
     - Нажать кнопку выбора языка
     - Выбрать "English"
-  expected-result: |
+   expected-result: |
     Интерфейс сайта отображается на английском языке
 
-- summary: |
+  - summary: |
     Проверка переключения языка интерфейса на русский язык
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность переключить на русский язык
-  prerequisites: |
+   prerequisites: |
     Открыта главная страница сайта
-  test-data: |
+   test-data: |
     Язык = Russian
-  steps:
+   steps:
     - Нажать кнопку выбора языка
     - Выбрать "Русский"
-  expected-result: |
+   expected-result: |
     Интерфейс сайта отображается на русском языке
 
-- summary: |
+  - summary: |
     Проверка регистрации нового пользователя
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность зарегистрироваться
-  prerequisites: |
+   prerequisites: |
     Открыта страница регистрации
-  test-data: |
+   test-data: |
     Имя = "Ivan"; Email = "IvanIvanov.com"; Пароль = "Password123"
-  steps:
+   steps:
     - Ввести имя
     - Ввести email
     - Ввести пароль
     - Нажать кнопку "Зарегистрироваться"
-  expected-result: |
+   expected-result: |
     Пользователь успешно регистрируется и попадает на главную страницу
 
-- summary: |
+  - summary: |
     Проверка успешной авторизации пользователя
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность авторизоваться
-  prerequisites: |
+   prerequisites: |
     Открыта страница авторизации; пользователь зарегистрирован
-  test-data: |
+   test-data: |
     Email = "IvanIvanov.com"; Пароль = "qwerty123"
-  steps:
+   steps:
     - Ввести email
     - Ввести пароль
     - Нажать кнопку "Войти"
-  expected-result: |
+   expected-result: |
     Пользователь попадает на главную страницу
     
-- summary: |
+  - summary: |
     Проверка оформления заказа с переходом на оплату
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность оформить заказ с переходом на оплату
-  prerequisites: |
+   prerequisites: |
     В корзину добавлен хотя бы один товар
-  test-data: |
+   test-data: |
     Товар = Gucci"; Адрес доставки = "Белгород, ул. Ленина, 1"
-  steps:
+   steps:
     - Перейти в корзину
     - Нажать кнопку "Оформить заказ"
     - Ввести адрес доставки
     - Перейти к оплате
-  expected-result: |
+   expected-result: |
     Пользователь перенаправляется на страницу оплаты заказа---
----
+ ---
 #Negative Testing
-- summary: |
+  - summary: |
     Проверка поиска товара с несуществующим ключевым словом
-  requirement: |
+   requirement: |
     При вводе несуществующего ключевого слова пользователь должен увидеть сообщение о том, что товары не найдены
-  prerequisites: |
+   prerequisites: |
     Открыта главная страница интернет-магазина
-  test-data: |
+   test-data: |
     Ключевое слово = "iphone100"
-  steps:
+   steps:
     - Ввести несуществующее слово в строку поиска
     - Нажать кнопку "Поиск"
-  expected-result: |
+   expected-result: |
     Отображается сообщение "Товары не найдены"
     
-- summary:
+   - summary:
     Проверка фильтрации товаров с некорректным диапазоном цен
-  requirement: |
+   requirement: |
     При некорректном диапазоне фильтр должен выдавать ошибку или не применять фильтрацию
-  prerequisites: |
+   prerequisites: |
     Открыта страница каталога
-  test-data: |
+   test-data: |
     Цена от = 5000; Цена до = 10
-  steps:
+   steps:
     - Установить фильтр по цене с неверным диапазоном
     - Нажать кнопку "Применить"
-  expected-result: |
+   expected-result: |
     Отображается сообщение об ошибке или список товаров не изменяется|
 
-  - summary: |
+   - summary: |
     Проверка добавления товара в корзину без авторизации
-  requirement: |
+   requirement: |
     Для добавления товара требуется авторизация, неавторизованный пользователь должен увидеть предупреждение
-  prerequisites: |
+   prerequisites: |
     Пользователь не авторизован
-  test-data: |
+   test-data: |
     Товар = "Gucci"
-  steps:
+   steps:
     - Нажать "Добавить в корзину"
-  expected-result: |
+   expected-result: |
     Отображается сообщение "Авторизуйтесь, чтобы добавить товар в корзину"
     
-  - summary: |
+   - summary: |
     Проверка оформления заказа без заполнения адреса доставки
-  requirement: |
+   requirement: |
     При отсутствии адреса система должна показать сообщение об ошибке
-  prerequisites: |
+   prerequisites: |
     В корзине есть товары
-  test-data: |
+   test-data: |
     Адрес = ""
-  steps:
+   steps:
     - Перейти к оформлению заказа
     - Оставить поле адреса пустым
     - Нажать "Подтвердить заказ"
-  expected-result: |
+   expected-result: |
     Отображается ошибка "Введите адрес доставки"
 
-  - summary: |
+   - summary: |
     Проверка авторизации с неверным паролем
-  requirement: |
+   requirement: |
     При неверном пароле пользователь должен получить сообщение об ошибке
-  prerequisites: |
+   prerequisites: |
     Открыта страница авторизации; пользователь зарегистрирован
-  test-data: |
+   test-data: |
     Email = "IvanIvanov.com"; Пароль = "qwerty321"
-  steps:
+   steps:
     - Ввести email
     - Ввести неверный пароль
     - Нажать "Войти"
-  expected-result: |
+   expected-result: |
     Отображается ошибка "Неверный логин или пароль"
  

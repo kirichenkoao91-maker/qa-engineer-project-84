@@ -169,7 +169,7 @@ Positive Testing
   expected-result: |
     Пользователь перенаправляется на страницу оплаты заказа---
 ---
-Negative Testing
+#Negative Testing
 - summary: |
     Проверка поиска товара с несуществующим ключевым словом
   requirement: |

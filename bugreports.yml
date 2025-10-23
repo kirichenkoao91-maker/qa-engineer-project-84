@@ -123,8 +123,8 @@
 - summary: |
     В списке категорий, нет возможности выбора Без категории
   environment: |
-    Google Chrome Версия 119.0.6045.200 (Официальная сборка), (64 бит)
-    ОС Windows 10 Home version 22H2 build-19045.3693
+    Google Chrome, 140.0.7339.208 (Официальная сборка) (64 бит), Windows 10 pro 
+    Windows 10 pro 22H2
   steps-to-reproduce: |
     1. Зайти на страницу https://hexlet-products-store.vercel.app/
     2. Нажать на Категория

@@ -1,87 +1,83 @@
 - summary: |
     Проверка успешного поиска по ключевому слову
-status: pass
+  status: pass
 
 - summary: |
     Проверка безуспешного поиска по ключевому слову
-status: pass
+  status: pass
   
 - summary: |
     Проверка поиска по категории
-status: pass
+  status: pass
 
 - summary: |
     Проверка работы фильтра по одному типу товара
-status: pass
+  status: pass
 
 - summary: |
     Проверка работы фильтра по нескольким типам товаров
-status: pass
+  status: pass
 
 - summary: |
     Проверка работы фильтра по наличию
-status: pass
+  status: pass
 
 - summary: |
     Проверка работы фильтра по цене товара
-status: pass
+  status: pass
 
 - summary: |
     Проверка работы фильтра по цене товара при отрицательных значениях
-status: fail
+  status: fail
 
 - summary: |
     Проверка работы фильтра по цене товара при неправильно заданном числовом диапазоне
-status: fail
+  status: fail
 
 - summary: |
     Проверка просмотра товара и его подробной информации
-status: pass
+  status: pass
 
 - summary: |
     Проверка возможности добавления товара в корзину из главной страницы
-status: pass
+  status: pass
 
 - summary: |
     Проверка возможности добавления товара в корзину из страницы с подробным описанием
-status: pass
+  status: pass
 
 - summary: |
     Проверка успешного добавления нескольких одинаковых товаров в корзину
-status: pass
+  status: pass
 
 - summary: |
     Проверка успешного добавления нескольких разных товаров в корзину
-status: pass
+  status: pass
 
 - summary: |
     Проверка удаления товара из корзины
-status: pass  
+  status: pass  
 
 - summary: |
     Проверка успешного изменения языка
-status: pass
+  status: pass
 
 - summary: |
     Проверка на отсутствие ошибок при загрузке главной страницы
-status: fail
+  status: fail
 
 - summary: |
     Проверка на отсутствие ошибок при загрузке страницы корзины
-status: fail
+  status: fail
 
 - summary: |
     Проверка на отсутствие ошибок при загрузке формы с оформлениям заказа
-status: fail
+  status: fail
 
 - summary: |
     Проверка на отсутствие ошибок при загрузке страницы товарной карточки
-status: fail
+  status: fail
 
 - summary: |
     Проверка успешной покупки товаров
-status: fail
-
-
-
-
+  status: fail

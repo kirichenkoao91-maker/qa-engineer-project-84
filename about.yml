@@ -1,11 +1,11 @@
 ---
 name: Anton Kirichenko
 job: QA Engineer
-level: junior
-email: kirichenkoao91@gmail.com
-description: 
+level:  junior
+email:  kirichenkoao91@gmail.com
+description: |
   Привет, я Антон. Моя мечта работать тестировщиком и стать профессионалом .
-skills: 
+skills: |
   - Функциональное тестирование
   - Написание багрепортов
   - Написание тест-кейсов
